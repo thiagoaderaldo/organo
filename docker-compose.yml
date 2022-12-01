@@ -1,0 +1,13 @@
+version: "3.9"
+services:
+  alura-curso-react:
+    image: thiago.aderaldo/organo:1.0
+    container_name: alura-curso-react
+    networks:
+      - compose-bridge
+    ports:
+      - 3000:3000
+
+networks:
+  compose-bridge:
+    driver: bridge
